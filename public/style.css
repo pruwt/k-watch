@@ -57,8 +57,9 @@ cursor: pointer;
 font-family: 'Poppins', sans-serif;
 }
 
-.nav-btn:hover{
+button:hover{
   background-color: #F2BED1;
+  cursor: pointer;
 }
 
 .title{
@@ -111,4 +112,20 @@ line-height: normal;
   background: rgba(0, 0, 0, 0.3);
   border-radius: 15px;
   z-index: 0; /* Ensure overlay is behind the text */
+}
+/* sign up btn  */
+.btn-container{
+  display: flex;
+  justify-content: center;
+}
+
+.sign-up{
+width: 150px;
+height: 40px;
+flex-shrink: 0;
+border: none;
+color: white;
+font-family: 'Poppins', sans-serif;
+border-radius: 10px;
+background: #5D3587;
 }
