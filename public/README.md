@@ -1,0 +1,1 @@
+This app helps kdrama watchers keep a wacthlist of kdramas they would like to watch!
