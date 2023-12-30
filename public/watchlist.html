@@ -4,45 +4,49 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="style.css">
-  <title>Explore</title>
+  <title>Watchlist</title>
 </head>
 <body>
+  
   <header>
     <!-- pc-navbar -->
     <nav class="navbar">
       <div class="logo">k-watch</div>
       <ul class="nav-links">
         <li><a href="index.html">home</a></li>
-        <li><a href="#explore">explore</a></li>
-        <li><a href="watchlist.html">watchlist</a></li>
+        <li><a href="explore.html">explore</a></li>
+        <li><a href="#watchlist">watchlist</a></li>
         <li><a href="#details">details</a></li>
       </ul>
       <button class="nav-btn">Log In</button>
     </nav>
   </header>
-  <p class="title">
-    Ready to add some kdramas to your list?
-  </p>
-  <div class="search-container">
-   
-    <form action="#">
-      <input type="text" name="search-bar" id="search-bar" placeholder="Search for Kdramas...">
-      <button type="submit">Search</button>
-    </form>
-  </div>
-  <section class="kdrama-cards">
+  <p class="title">Your Watchlist</p>
+  <section class="watchlist">
     <div class="kdrama-card-individual">
       <img src="assets/images/my-name.jpg" alt="my name kdrama">
     <p class="k-title">My Name</p>
-    </div>
+      <div class="remove-btn"> <button type="button">Remove</button></div>
+  </div>
     <div class="kdrama-card-individual">
       <img src="assets/images/whats-wrong-sec.jpg" alt="whats wrong with secretary kim">
     <p class="k-title">What's wrong with Secretary Kim?</p>
+    <div class="remove-btn"> <button type="button">Remove</button></div>  
+  </div>
+    <div class="kdrama-card-individual">
+      <img src="assets/images/love-to-hate-you.jpg" alt="love to hate you kdrama">
+    <p class="k-title">Love to Hate You</p>
+    <div class="remove-btn"> <button type="button">Remove</button></div>
     </div>
     <div class="kdrama-card-individual">
       <img src="assets/images/love-to-hate-you.jpg" alt="love to hate you kdrama">
     <p class="k-title">Love to Hate You</p>
+    <div class="remove-btn"> <button type="button">Remove</button></div>
     </div>
   </section>
+</section>
+<div class="btn-container">
+  <button class="sign-up">Next</button>
+</div>
 </body>
 </html>
