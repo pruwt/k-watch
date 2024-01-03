@@ -1,0 +1,131 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,500;0,600;1,300&display=swap');
+
+*{
+  margin: 0;
+  box-sizing: border-box;
+  padding: 0;
+}
+
+html{
+  scroll-behavior: smooth;
+}
+
+body{
+  font-family: 'Poppins', sans-serif;
+
+}
+
+/* navbar  */
+.navbar{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  height: 17vh;
+}
+.nav-links{
+  display: flex;
+  gap: 2rem;
+  list-style: none;
+  font-size: 1.2rem;
+}
+
+.nav-links a {
+  color: #392467;
+  text-decoration: none;
+  text-decoration-color:#FFD1E3 ;
+}
+
+.nav-links a:hover{
+  color: #F2BED1;
+  text-decoration: underline;
+  text-underline-offset: 1rem;
+  text-decoration-line: #5D3587;
+}
+.logo{
+  color: #392467;
+  font-size: 1.5rem;
+}
+.nav-btn{
+width: 100px;
+height: 40px;
+flex-shrink: 0;
+color: white;
+background-color: #5D3587;
+border-radius: 7px;
+border: none;
+cursor: pointer;
+font-family: 'Poppins', sans-serif;
+}
+
+button:hover{
+  background-color: #F2BED1;
+  cursor: pointer;
+}
+
+.title{
+  color: #5D3587;
+text-align: center;
+font-family: Poppins;
+font-size: 30px;
+font-style: normal;
+font-weight: 700;
+line-height: normal;
+}
+
+/* cards -homepage-layout */
+.kdrama-cards{
+  display: flex;
+  justify-content: space-around;
+  align-items:center;
+  padding: 20px;
+}
+.kdrama-card-individual{
+   position: relative;  /*positioning context for absolutely pos elements*/
+  text-align: center;
+  cursor: pointer;
+}
+.kdrama-card-individual img{
+  width: 100%;
+  max-width: 200px; /* Adjust the maximum width as needed */
+  border-radius: 15px; 
+  position: relative; /*ensures img pos relatice to its cotainer*/
+  
+  /* opacity: 1.0; */
+}
+.kdrama-card-individual .k-title{
+  position: absolute; /*positions the title abs within the card*/
+   top: 50%; /* Places the top of the title at the vertical center */
+  left: 50%;/* Places the left of the title at the horizontal center */
+  transform: translate(-50%,-50%); /**/
+  color: #fff;
+  font-size: 18px;
+  z-index: 1; /*text will come infront of the overlay*/
+}
+/* semi-transparent-overlay for the picture , before- places sth before the selected content, in this case overlay */
+.kdrama-card-individual:hover:after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 95%;
+  background: rgba(0, 0, 0, 0.3);
+  border-radius: 15px;
+  z-index: 0; /* Ensure overlay is behind the text */
+}
+/* sign up btn  */
+.btn-container{
+  display: flex;
+  justify-content: center;
+}
+
+.sign-up{
+width: 150px;
+height: 40px;
+flex-shrink: 0;
+border: none;
+color: white;
+font-family: 'Poppins', sans-serif;
+border-radius: 10px;
+background: #5D3587;
+}
