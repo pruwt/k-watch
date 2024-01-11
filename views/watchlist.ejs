@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="media.css">
+
+  <title>Watchlist</title>
+</head>
+<body>
+  
+  <header>
+    <!-- pc-navbar -->
+    <%- include ('./partials/nav.ejs') %>
+  </header>
+  <p class="title">Your Watchlist</p>
+  <section class="watchlist">
+    <div class="kdrama-card-individual">
+      <img src="assets/images/my-name.jpg" alt="my name kdrama">
+    <p class="k-title">My Name</p>
+      <div class="remove-btn"> <button type="button">Remove</button></div>
+  </div>
+    <div class="kdrama-card-individual">
+      <img src="assets/images/whats-wrong-sec.jpg" alt="whats wrong with secretary kim">
+    <p class="k-title">What's wrong with Secretary Kim?</p>
+    <div class="remove-btn"> <button type="button">Remove</button></div>  
+  </div>
+    <div class="kdrama-card-individual">
+      <img src="assets/images/love-to-hate-you.jpg" alt="love to hate you kdrama">
+    <p class="k-title">Love to Hate You</p>
+    <div class="remove-btn"> <button type="button">Remove</button></div>
+    </div>
+    <div class="kdrama-card-individual">
+      <img src="assets/images/love-to-hate-you.jpg" alt="love to hate you kdrama">
+    <p class="k-title">Love to Hate You</p>
+    <div class="remove-btn"> <button type="button">Remove</button></div>
+    </div>
+  </section>
+</section>
+<div class="btn-container">
+  <button class="sign-up">Next</button>
+</div>
+<script src="script.js"></script>
+</body>
+</html>

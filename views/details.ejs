@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="media.css">
+
+  <title>Details</title>
+</head>
+<body>
+  <header>
+    <!-- pc-navbar -->
+    <%- include ('./partials/nav.ejs') %>
+    
+  </header>
+  <div class="title-container">
+    <p class="title">
+      What’s Wrong With Secretary Kim?
+    </p>
+  </div>
+
+  <div class="details-container">
+    <div class="details-image-container">
+      <img src="/public/assets/images/whats-wrong-sec.jpg" alt="Drama Image">
+    </div>
+    <div class="synopsis-container">
+      <div class="header">
+        <h2>Synopsis</h2>
+        <button>Add to Watchlist</button>
+      </div>
+      <div class="synopsis-text">
+        <!-- Add your synopsis text here -->
+        Lee Young-Joon's family runs a large company and he works as the vice-president of the company. 
+He is smart, rich and handsome, but he is arrogant. His secretary is Kim Mi-So.
+She has worked for him for years and she is perfect for him, but Kim Mi-So decides to quit her job.
+      </div>
+      <button class="trailer-button">Watch Trailer</button>
+    </div>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>

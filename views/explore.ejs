@@ -4,21 +4,14 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="media.css">
+
   <title>Explore</title>
 </head>
 <body>
   <header>
     <!-- pc-navbar -->
-    <nav class="navbar">
-      <div class="logo">k-watch</div>
-      <ul class="nav-links">
-        <li><a href="index.html">home</a></li>
-        <li><a href="#explore">explore</a></li>
-        <li><a href="#watchlist">watchlist</a></li>
-        <li><a href="#details">details</a></li>
-      </ul>
-      <button class="nav-btn">Log In</button>
-    </nav>
+    <%- include ('./partials/nav.ejs') %>
   </header>
   <p class="title">
     Ready to add some kdramas to your list?
@@ -44,5 +37,6 @@
     <p class="k-title">Love to Hate You</p>
     </div>
   </section>
+  <script src="script.js"></script>
 </body>
 </html>
